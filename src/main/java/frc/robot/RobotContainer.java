@@ -20,7 +20,7 @@ public class RobotContainer {
   // The robot's subsystems and commands are defined here...
   private final DriveTrainSubsystem m_DriveTrainSubsystem = new DriveTrainSubsystem();
 
-  private final SpinningCommand m_autoCommand = new SpinningCommand(m_exampleSubsystem);
+  private final SpinningCommand m_autoCommand = new SpinningCommand(m_DriveTrainSubsystem);
 
   /** The container for the robot. Contains subsystems, OI devices, and commands. */
   public RobotContainer() {
